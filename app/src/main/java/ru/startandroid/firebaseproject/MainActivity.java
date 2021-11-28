@@ -2,6 +2,7 @@ package ru.startandroid.firebaseproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickRead(View view) {
-
+        Intent intent = new Intent(this, ReadActivity.class);
+        startActivity(intent);
     }
 
     public void onClickSave(View view) {
