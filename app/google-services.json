@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "702280959184",
+    "firebase_url": "https://basadatetigre-default-rtdb.firebaseio.com",
+    "project_id": "basadatetigre",
+    "storage_bucket": "basadatetigre.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702280959184:android:72dc0f5fbe21faef1e8ad5",
+        "android_client_info": {
+          "package_name": "ru.startandroid.firebaseproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702280959184-uapocsrr8s4f5rce1dh97mde6ajpl7fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbdUjikKDNjfvkgqJzPxnob7n5cY2f1Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702280959184-uapocsrr8s4f5rce1dh97mde6ajpl7fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

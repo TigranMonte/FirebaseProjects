@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Firebase project</string>
+    <string name="read">Read</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="SecondName">Second Name</string>
+    <string name="email">Email</string>
 </resources>
