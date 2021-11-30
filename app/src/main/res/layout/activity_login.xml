@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/edLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,13 +27,12 @@
         android:id="@+id/edPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/edLogin"
         app:layout_constraintStart_toStartOf="@+id/edLogin"
         app:layout_constraintTop_toBottomOf="@+id/edLogin" />
@@ -41,13 +41,12 @@
         android:id="@+id/btnSignUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="28dp"
         android:onClick="onClickSignUp"
-        android:text="Зарегистрироваться"
+        android:text="Зарегистрироватся"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/edPassword"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/edPassword"
         app:layout_constraintTop_toBottomOf="@+id/edPassword" />
 
@@ -55,13 +54,48 @@
         android:id="@+id/btnSignIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="12dp"
         android:onClick="onClickSignIn"
         android:text="Войти"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:text="TextView"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:onClick="onClickStart"
+        android:text="Залетай"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserEmail" />
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickSignOut"
+        android:text="Выход"
+        app:layout_constraintEnd_toEndOf="@+id/btnStart"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/btnStart"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart" />
 </androidx.constraintlayout.widget.ConstraintLayout>
